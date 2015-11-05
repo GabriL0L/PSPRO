@@ -16,8 +16,8 @@ public class Clase {
     private Random rnd;
 
     public Clase(){
-        disponible = new boolean[NUM_ASIENTOS];
-        Arrays.fill(disponible, true);
+        /*disponible = new boolean[NUM_ASIENTOS];
+        Arrays.fill(disponible, true);*/
         rnd = new Random();
     }
 
@@ -42,9 +42,8 @@ public class Clase {
             semaforo.acquire();
             // Obtengo el número de silla a ocupar por el alumno.
             asiento = getSilla();
-            int duracion = rnd.nextInt(10);
             System.out.printf("Asiento %d ocupado por %s\n", asiento, Thread.currentThread().getName());
-            TimeUnit.SECONDS.sleep(duracion);
+            TimeUnit.SECONDS.sleep(rnd.nextInt(10));
             // Libero el asiento
             disponible[asiento] = true;
             System.out.printf("Asiento %d liberado por %s\n", asiento, Thread.currentThread().getName());
