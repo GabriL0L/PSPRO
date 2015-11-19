@@ -6,7 +6,8 @@ import java.util.concurrent.Exchanger;
  */
 public class Intercambio {
     public static void main(String[] args) {
-        ArrayList<String> buffer1 = new ArrayList<>();
+
+       ArrayList<String> buffer1 = new ArrayList<>();
         ArrayList<String> buffer2 = new ArrayList<>();
 
         Exchanger<ArrayList<String>> intercambiador = new Exchanger<>();
