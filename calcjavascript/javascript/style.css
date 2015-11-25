@@ -1,0 +1,26 @@
+/*EJERCICIOS 1,2,3,4,5
+.negritaCursiva {
+  font-style: italic;
+  font-weight: bold;
+}
+.pingu {
+  width: 400px;
+  height: 400px;
+  background-color: green;
+}
+
+.tablita {
+  border: 1px solid black;
+  width: 600px;
+  height: 600px;
+  background-color: grey;
+}
+td {
+  border: 1px solid black;
+  padding-left: 250px;
+}
+
+EJERCICIO 6
+p {
+  display: none;
+}*/

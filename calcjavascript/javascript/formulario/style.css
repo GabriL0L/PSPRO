@@ -1,0 +1,21 @@
+.container {
+  padding-top: 20px;
+}
+.alerta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 50px;
+  /*background-color: #33FF99;*/
+}
+.alertaVisible {
+  display: block;
+}
+#formulario {
+  border: 1px solid;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Prueba de formulario</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <form class="row" id="formulario" name="formulario" method="post">
+      <div class="container col-lg-6">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input name="nombre" type="text" class="form-control" id="nombre" placeholder="Baldomero">
+        </div>
+        <div class="form-group">
+          <label for="edad">Edad</label>
+          <input name="edad" type="number" class="form-control" id="edad" placeholder="20" min="0" max="130">
+        </div>
+        <div class="checkbox">
+          <label>
+            <input name="esRepetidor" type="checkbox" id="esRepetidor">Repetidor
+          </label>
+        </div>
+      </div>
+      <div class="container col-lg-6">
+        <div class="form-group">
+          <label for="poblacion">Población</label>
+          <select name="poblacion" class="form-control" id="poblacion">
+            <option>Algeciras</option>
+            <option>Tarifa</option>
+            <option>La Linea</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Sexo</label>
+          <div class="radio">
+            <label>
+              <input class="sexo" type="radio" name="sexo" id="hombre" value="Hombre" checked>Hombre
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input class="sexo" type="radio" name="sexo" id="mujer" value="Mujer">Mujer
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="comentario">Comentario</label>
+          <textarea class="form-control" name="comentario" id="comentario" cols="10" rows="4" placeholder="Texto de ejemplo"></textarea>
+        </div>
+      </div>
+      <div class="container" id="contBoton">
+        <button class="btn btn-default center-block" id="botoncito">Enviar</button>
+      </div>
+    </form>
+    <div class="alert alert-success alert-dismissible alerta" id="alerta">
+      <button id="cerrar" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+      </button>
+      <p id="muestraAlerta"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
